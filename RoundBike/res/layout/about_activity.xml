@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="RoundBIKE"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#666666"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Versión 1.0"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvPropietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvVersion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Creado por Guzmán Juan"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSoporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvPropietario"
+        android:layout_marginTop="50dp"
+        android:text="Soporte para Android 2.2 en adelante" />
+
+    <TextView
+        android:id="@+id/tvDerechos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/stDerechos" />
+	
+</RelativeLayout>

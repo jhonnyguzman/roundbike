@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal" >
+ 		
+    <PreferenceCategory android:title="Preferencias">
+        
+	    <ListPreference
+	        android:key="arrServicio"
+	        android:title="Tipo de servicio"
+	        android:summary="Servicio de alquiler de bicicletas pago o gratis."
+	        android:entries="@array/unidadesServicio"
+	        android:entryValues="@array/unidadesServicioValores"
+	        android:defaultValue="3"/>
+	    
+	 	<EditTextPreference
+	        android:key="radiobusqueda"
+	        android:title="Radio de búsqueda"
+	        android:summary="Radio de busqueda desde donde te encuentras expresados en kilómetros."
+	        android:defaultValue="20"
+	        />
+	    
+	    <ListPreference
+	        android:key="arrDistance"
+	        android:title="Unidades de medida"
+	        android:summary="Distancia expresada en kilómetros o metros."
+	        android:entries="@array/unidadesDistancia"
+	        android:entryValues="@array/unidadesDistanciaValores"
+	        android:defaultValue="1"/>
+
+	  </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+ 	
+    <ImageView 
+        android:id="@+id/ivMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_item_location"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+    />
+    
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivMarker"
+        android:layout_margin="5dp"
+        android:textColor="#666666"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+ 
+    <TextView
+        android:id="@+id/tvDomicilio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#333333" 
+        android:textSize="15dp"
+        android:text="San Juan 658"
+        android:layout_below="@+id/tvNombre"/>
+    
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#333333" 
+         android:text="Habilitado"
+        android:layout_below="@+id/tvDomicilio"/>
+    
+    <TextView
+        android:id="@+id/tvServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#333333" 
+        android:textSize="15dp"
+         android:text="Gratis"
+        android:layout_below="@+id/tvTelefono"/>
+    
+    <TextView
+        android:id="@+id/tvDistancia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#333333" 
+        android:textSize="15dp"
+         android:text="Distancia Aprox. 15 km."
+        android:layout_below="@+id/tvServicio"/>
+ 
+     <LinearLayout 
+         android:id="@+id/lyFooterDialog"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/tvDistancia"
+         android:weightSum="10">
+     
+     <Button
+        android:id="@+id/dialogButtonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar"
+        android:layout_margin="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@drawable/try_again_button_text"
+        android:textStyle="bold"
+        android:background="@drawable/try_again_button_bg"
+        android:layout_weight="5"
+        />
+     
+     <Button
+        android:id="@+id/dialogButtonReservar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contactar"
+        android:layout_margin="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@drawable/try_again_button_text"
+        android:textStyle="bold"
+        android:background="@drawable/try_again_button_bg"
+        android:layout_weight="5"
+        />
+     
+     </LinearLayout>
+ 
+</RelativeLayout>

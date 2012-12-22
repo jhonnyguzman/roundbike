@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">RoundBike</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="title_activity_main">RoundBIKE</string>
+    <string name="stDerechos">\u00A9 2012. Todos los derechos Reservados</string>
+
+</resources>

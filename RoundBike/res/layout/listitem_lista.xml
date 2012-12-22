@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="5dp"
+  android:background="#FFFFFF"
+  >
+ 
+	<TextView 
+	    android:id="@+id/lblNombre"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    android:textColor="#666666"
+	    android:padding="2dp"/>
+	 
+	<TextView android:id="@+id/lblDomicilio"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/lblNombre"
+	    android:textColor="#333333"
+	    android:textSize="13sp"
+	    android:padding="2dp"
+	  />
+	
+	<TextView android:id="@+id/lblDistancia"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/lblNombre"
+	    android:textColor="#333333"
+	    android:textStyle="bold"
+	    android:textSize="13sp"
+	    android:padding="2dp"
+	  />
+	
+	<TextView android:id="@+id/lblTelefono"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/lblDomicilio"
+	    android:textColor="#333333"
+	    android:textSize="13sp"
+	    android:text="011-4976552"
+	    android:padding="2dp"
+	  />
+	<TextView android:id="@+id/lblServicio"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/lblDomicilio"
+	    android:textColor="#FFFFFF"
+	    android:textSize="13sp"
+	    android:padding="2dp"
+	    android:background="@drawable/custom_textview_bg"
+	  />
+</RelativeLayout>
